@@ -1,0 +1,17 @@
+<FindBugsFilter>
+    <Match>
+	
+        <Bug pattern="CRLF_INJECTION_LOGS"/>
+    </Match>
+
+	<Match>
+		<Class name="org.broadleafcommerce.openadmin.server.service.persistence.datasource.SandBoxConnection"/>
+		<Bug pattern="SQL_INJECTION_JDBC"/>
+	</Match>
+
+	<Match>
+		<Class name="org.broadleafcommerce.openadmin.server.service.persistence.datasource.SandBoxConnection"/>
+		<Bug pattern="EXTERNAL_CONFIG_CONTROL"/>
+	</Match>
+
+</FindBugsFilter>
